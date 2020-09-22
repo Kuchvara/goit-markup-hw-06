@@ -781,6 +781,7 @@ body {
 .modal-form-input:focus,
 .form-comment:focus {
   border: 1px solid var(--active);
+  outline: var(--active);
 }
 
 .modal-form-input:focus + .modal-form-icon {
