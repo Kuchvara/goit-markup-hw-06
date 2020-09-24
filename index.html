@@ -439,11 +439,9 @@
             </li>
           </ul>
         </div>
-        <form action="" class="subscribe-form">
+        <form class="subscribe-form" autocomplete="off">
           <div>
-            <label for="mail" class="subscribe-form-text"
-              >Подпишитесь на рассылку</label
-            >
+            <b class="subscribe-form-text"> Подпишитесь на рассылку</b>
             <input
               type="email"
               class="subscribe-input"
@@ -452,7 +450,7 @@
               placeholder="E-mail"
             />
           </div>
-          <button class="subscribe-button">
+          <button type="submit" class="subscribe-button">
             <span class="subscribe-button-text">Подписаться</span>
             <svg
               width="24"
@@ -484,7 +482,7 @@
             />
           </svg>
         </button>
-        <form action="" class="modal-form" autocomplete="off">
+        <form class="modal-form" autocomplete="off">
           <span class="modal-form-text"
             >Оставьте свои данные, мы вам перезвоним</span
           >
@@ -555,28 +553,15 @@
             ></textarea>
           </div>
           <div class="agreement-field">
-            <label class="agreement-text"
-              ><input type="checkbox" class="agreement" />
-              <svg
-                class="agreement-icon"
-                width="16"
-                height="15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="16" height="15" rx="2" />
-                <path
-                  d="M3.957 7.752l-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422z"
-                  fill="#fff"
-                  stroke="#fff"
-                  stroke-width=".2"
-                /></svg
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="">&nbsp;Условия договора</a></label
-            >
+            <label class="agreement-text">
+              <input type="checkbox" class="agreement" />
+              <span class="agreement-icon"></span>
+              Соглашаюсь с рассылкой и принимаю
+              <a href="">&nbsp;Условия договора</a>
+            </label>
           </div>
 
-          <button class="submit">Отправить</button>
+          <button type="submit" class="submit">Отправить</button>
         </form>
       </div>
     </div>
