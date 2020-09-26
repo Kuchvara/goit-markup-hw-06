@@ -837,6 +837,7 @@ body {
 .agreement-text {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -856,7 +857,9 @@ body {
   position: absolute;
 }
 
-.agreement-icon {
+.agreement-icon::after {
+  content: '';
+  display: flex;
   background-image: url(../images/icons/checkbox_off.svg);
   width: 16px;
   height: 15px;
@@ -864,7 +867,7 @@ body {
   transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.agreement:checked + .agreement-icon {
+.agreement:checked + .agreement-icon::after {
   background-image: url(../images/icons/checkbox_on.svg);
 }
 
